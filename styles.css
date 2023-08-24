@@ -1,0 +1,416 @@
+@font-face {
+  font-family: cooper;
+  src: url(cooper_light_bt.ttf);
+}
+/* ::selection{
+    background-color: #9bffd9;
+    color: #029c61;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cooper;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+button,
+li {
+  cursor: pointer;
+}
+.button {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+button,
+li {
+  cursor: pointer;
+}
+p {
+  font-family: sequel-sans-display, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+}
+nav {
+  position: sticky;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.4rem;
+}
+nav ul {
+  display: flex;
+  display: none;
+}
+nav li {
+  padding-inline-start: 2rem;
+}
+nav .navlogo {
+  width: 144px;
+}
+.navham svg {
+  width: 25px;
+}
+nav .button {
+  border: 1px solid grey;
+  background-color: transparent;
+  outline: none;
+  padding-inline: 1rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+nav .button p {
+  margin-inline-end: 20px;
+}
+.cont1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block-start: 3.5rem;
+  position: relative;
+}
+.cont1 h1 {
+  font-weight: 100;
+  font-size: 2rem;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  max-width: 350px;
+  margin-block: 3rem;
+}
+.cont1 h1::after {
+  content: "";
+  position: absolute;
+  background: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+  width: 50%;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+}
+.cont1 > p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.cont1 .button {
+  width: 70px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 1rem;
+  /* margin-top: 2rem; */
+  padding: 10px 10px;
+  position: relative;
+}
+.button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00eb8f;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  display: none;
+}
+@keyframes btn-anim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.button:hover::after {
+  display: block;
+  animation-name: btn-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.cont1 .button img {
+  width: 40px;
+  height: 10px;
+}
+.cont1 .wrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.cont1 > img {
+  max-width: 100%;
+  margin-top: 3rem;
+}
+
+.cont2 {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  background-color: black;
+}
+.cont2 .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.cont2 .circle {
+  background-color: #00eb8f;
+  width: 10px;
+  border-radius: 50%;
+  height: 8px;
+  margin-right: 10px;
+}
+.cont2 h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.cont2 h2 span {
+  background: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+  background-size: cover;
+  padding: 10px;
+}
+.cont2 .wrapper .button {
+  border: 1px solid white;
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.cont2 img {
+  height: 15px;
+  width: 100%;
+}
+
+.cont3 .sideImg {
+  max-width: 500px;
+  position: relative;
+  padding-block: 1.5rem;
+  /* height: 100vh; */
+}
+#img1 {
+  width: 25%;
+  margin-bottom: 3rem;
+}
+#img2 {
+  margin-left: 1rem;
+  position: absolute;
+  width: 50%;
+}
+#img3 {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+}
+#img4 {
+  width: 60%;
+  position: absolute;
+  bottom: -10%;
+  margin-left: 1rem;
+}
+.cont3 .text {
+  margin-top: 8rem;
+  /* text-align: center; */
+  padding: 2rem 1.5rem;
+}
+.cont3 .text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 200;
+}
+.cont3 .text > p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.cont3 .wrapper {
+  display: flex;
+  align-items: center;
+}
+.cont3 .wrapper img {
+  width: 32px;
+  background-color: rgb(228, 238, 242);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.cont3 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+  padding-block: 10px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.cont3 .button p {
+  font-size: 0.8rem;
+}
+.cont3 .button img {
+  width: 40px;
+  height: 10px;
+  background-color: transparent;
+}
+.cont4 {
+  text-align: center;
+  padding: 1rem;
+}
+.cont4 h3 {
+  font-family: cooper;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.cont4 h3 span {
+  background: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+  padding: 4px;
+}
+.cont4 .logos {
+  margin-block: 3rem;
+  /* display: grid;
+    grid-template-columns: auto auto;  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont4 img {
+  margin-block: 2rem;
+  width: 100px;
+}
+.cont5 {
+  color: white;
+  padding: 1rem;
+}
+.cont5 .article {
+  padding: 1.5rem;
+  text-transform: capitalize;
+}
+.cont5 .article:hover {
+  cursor: pointer;
+}
+.article .wrapper,h2{
+  filter: opacity(1);
+}
+.article h2 {
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-top: 8rem;
+}
+#article1 {
+  background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=675&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=727b762303e46062ebfebf9a3fbf86e2);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+.cont5 #article2 {
+  background: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=675&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=b7070d5239bcfbe21f47b6e42d04043d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.article img {
+  width: 120px;
+}
+.cont5 .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cont5 .button {
+  border: 1px solid white;
+  max-width: 90px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont5 .button::after {
+  z-index: 0;
+}
+.cont5 .button img {
+  height: 15px;
+  z-index: 12;
+}
+footer {
+  margin-top: 10vh;
+  padding: 15px;
+  background-color: black;
+  position: relative;
+}
+footer .contact {
+  margin: auto;
+  /* width: 80vw; */
+  max-width: 1200px;
+  color: white;
+  background: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-size: cover;
+    background-position: center;
+  padding: 2rem;
+  /* padding-bottom: 1rem; */
+  text-align: center;
+}
+
+.contact .wrapper {
+  display: flex;
+  margin-top: 4rem;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact .button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+.contact .button p {
+  z-index: 44;
+  padding: 5px;
+}
+.contact .button::after {
+  z-index: 1;
+}
+.contact .button img {
+  height: 7px;
+  z-index: 44;
+  margin-inline-end: 10px;
+  background-color: transparent;
+}
+.contact > p {
+  font-size: 1.2rem;
+  font-family: cooper;
+}
+footer .contact img {
+  width: 31px;
+  background-color: rgb(228, 238, 242);
+  border-radius: 50%;
+}
